@@ -185,6 +185,37 @@ The frontend consists of static HTML, CSS, and JS files that can be served by an
 
 3.  The terminal will output a URL (usually `http://localhost:3000`). Open this URL in your browser to use the application.
 
+## 📖 Local Development Guides
+# Using IntelliJ IDEA Ultimate
+Open the Project: Select File > Open... and choose the root folder of the cloned repository.
+Run the Backend:
+Find the main.py file in the backend directory.
+IntelliJ should prompt you to configure a Python interpreter. Choose the one inside the venv folder you created earlier.
+Right-click inside the main.py file and select Run 'main'. This may require you to create a run configuration for Uvicorn.
+Alternatively, open the built-in Terminal (View > Tool Windows > Terminal), navigate to backend, activate the venv, and run uvicorn main:app --reload.
+Run the Frontend:
+Open the Terminal tool window.
+Run npx serve from the project's root directory.
+Click the link (http://localhost:3000) provided in the terminal to open the app.
+# Using Visual Studio Code
+Open the Project: Select File > Open Folder... and choose the root folder of the cloned repository.
+Run the Backend:
+Open a new Integrated Terminal (Terminal > New Terminal or `Ctrl+``).
+Navigate to the backend directory: cd backend.
+Activate the virtual environment and run the server:
+code
+Bash
+source venv/bin/activate  # Or .\venv\Scripts\activate on Windows
+uvicorn main:app --reload
+Run the Frontend:
+Open another Integrated Terminal (+ icon in the terminal panel).
+In this new terminal (which should be at the project root), run the server:
+code
+Bash
+npx serve
+Ctrl+Click the link (http://localhost:3000) in the terminal to open the app.
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you have suggestions for improvements, please feel free to fork the repository, create a new branch, and submit a pull request.
@@ -198,3 +229,9 @@ Contributions are welcome! If you have suggestions for improvements, please feel
 ## 📜 License
 
 This project is distributed under the MIT License.
+
+## 🙏 Acknowledgements
+React
+Tailwind CSS
+Google Gemini API
+Icons by Feather
