@@ -1,0 +1,5 @@
+{
+  "name": "API Test Bench & AI Assistant",
+  "description": "A sleek, shadcn-themed UI to test and demonstrate your FastAPI backend. Features an integrated Gemini AI assistant to analyze API responses, providing insights and suggestions for improvement.",
+  "requestFramePermissions": []
+}
